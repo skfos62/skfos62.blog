@@ -1,20 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap');
 
+p{
+  font-family: 'Noto Sans KR';
+  letter-spacing: -0.5px;
+  color: #444;
+  margin: 0px;
+}
 .container {
+  display: flex;
   margin: auto;
-  max-width: 500px;
-  font-family: sans-serif;
+  font-family: 'Roboto','Noto Sans KR', sans-serif;
+  color: #333;
+  flex-wrap: wrap;
+  padding: 20px 40px 0;
 }
 .heading {
-  color: rebeccapurple;
+  color: #333;
+  font-weight: 300;
+  font-size: 30px;
+  margin:30;
 }
 .nav-links {
   display: flex;
+  flex-direction: column;
   list-style: none;
   padding-left: 0;
+  margin-top: 50px;
+}
+.nav-link-logo {
+  color: #333;
+  text-decoration-line: none;
+  font-size: 30px;
+  font-weight: 200;
 }
 .nav-link-item {
+  font-size: 17px;
   padding-right: 2rem;
+  line-height:30px;
 }
 .nav-link-text {
   color:#333;
+}
+.content-container{
+  width: 75%;
+  height: 100%;
+}
+.sidebar-container{
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  
+}
+.home-info-container{
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+.home-image{
+  width: 200px;
+  height: 250px;
+}
+.title{
+  font-weight: 300;
+}
+.career-link{
+  color:#333;
+  font-size: 18px;
 }

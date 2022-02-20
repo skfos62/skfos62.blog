@@ -3,34 +3,23 @@ import { Link } from 'gatsby'
 import {
   container,
   heading,
-  navLinks,
-  navLinkItem,
-  navLinkText
+  contentContainer,
 } from './layout.module.css'
+import Sidebar  from '../components/sidebar'
+import Footer from '../components/footer'
 
 const Layout = ({ pageTitle, children }) => {
   return (
+    <>
     <div className={container}>
-    <title>{pageTitle}</title>
-    <nav>
-      <ul className={navLinks}>
-        <li className={navLinkItem}>
-          <Link to="/" className={navLinkText}>
-            Home
-          </Link>
-        </li>
-        <li className={navLinkItem}>
-          <Link to="/about" className={navLinkText}>
-            About
-          </Link>
-        </li>
-      </ul>
-    </nav>
-    <main>
-      <h1 className={heading}>{pageTitle}</h1>
-      {children}
-    </main>
-  </div>
+    <Sidebar />
+      <main className={contentContainer}>
+        <h1 className={heading}>{pageTitle}</h1>
+        <p >{children}</p>
+      </main>
+      <Footer />
+    </div>
+    </>
   )
 }
 export default Layout
