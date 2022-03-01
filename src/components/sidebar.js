@@ -8,16 +8,22 @@ import {
   navLinkText,
   navLinkLogo,
   sidebarContainer,
+  navToggle,
+  navLinksActive,
 } from './layout.module.css'
 
 const Sidebar = () => {
+  const [isClickedMenu,setIsClickedMenu] = React.useState(false)
+  const handleMenu = () => {
+    setIsClickedMenu(!isClickedMenu)
+  }
   return (
     <div className={sidebarContainer}>
     <Link to="/" className={navLinkLogo}>
               skfos62.dev
     </Link>
     <nav>
-      <ul className={navLinks}>
+      <ul className={isClickedMenu ? navLinksActive : navLinks}>
         <li className={navLinkItem}>
           <Link to="/" className={navLinkText}>
             Home
@@ -43,6 +49,7 @@ const Sidebar = () => {
         <br/>
         <li className={navLinkItem}> <strong>contact by</strong> <br/>skfos62.dev@gmail.com</li>
       </ul>
+      <button className={navToggle} onClick={handleMenu}>click!</button>
     </nav>
   </div>
   )

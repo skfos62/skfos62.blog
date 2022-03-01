@@ -12,7 +12,7 @@ const Layout = ({ pageTitle, children }) => {
   return (
     <>
     <div className={container}>
-    <Sidebar />
+       <Sidebar />
       <main className={contentContainer}>
         <h1 className={heading}>{pageTitle}</h1>
         <p >{children}</p>

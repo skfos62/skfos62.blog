@@ -63,7 +63,7 @@ const IndexPage = () => {
         <div>
           <h2 className={title}>Project & Used Skils</h2>
           <div>
-            <div style={{ display: "flex", gap: 20, marginBottom: 10 }}>
+            <div style={{ display: "flex", gap: 20, marginBottom: 10, flexWrap: "wrap" }}>
               <Link to="https://www.iclickart.co.kr/" className={careerLink}>
                 IsyncBrain 3.0
               </Link>
@@ -81,7 +81,7 @@ const IndexPage = () => {
           </div>
           <br />
           <div>
-            <div style={{ display: "flex", gap: 20, marginBottom: 10 }}>
+            <div style={{ display: "flex", gap: 20, marginBottom: 10, flexWrap: "wrap"}}>
               <p style={{fontSize: 18}}>
                 IsyncBeat
               </p>
