@@ -23,8 +23,8 @@ const Sidebar = () => {
               skfos62.dev
     </Link>
     <nav>
-      <ul className={isClickedMenu ? navLinksActive : navLinks}>
-        <li className={navLinkItem}>
+      <ul className={isClickedMenu ? navLinksActive : navLinks} onClick={handleMenu}>
+        <li className={navLinkItem} >
           <Link to="/" className={navLinkText}>
             Home
           </Link>
