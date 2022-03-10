@@ -30,8 +30,8 @@ const Sidebar = () => {
           </Link>
         </li>
         <li className={navLinkItem}>
-          <Link to="/sideProject" className={navLinkText}>
-            Side Project
+          <Link to="/etcPage" className={navLinkText}>
+            Etc
           </Link>
         </li>
         <br/>
