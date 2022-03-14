@@ -4,7 +4,24 @@ p{
   font-family: 'Noto Sans KR';
   letter-spacing: -0.5px;
   color: #444;
-  margin: 0px;
+  line-height: 160%;
+}
+a:link {
+  color : black;
+}
+a:visited {
+  color : black;
+}
+a:hover {
+  color : #444;
+}
+a:active {
+  color : black;
+}
+hr {
+  border: 0.5px solid #e6e6e6;
+  margin: 30px 0;
+  
 }
 .container {
   display: flex;
