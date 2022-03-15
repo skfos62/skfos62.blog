@@ -3,7 +3,7 @@
 p{
   font-family: 'Noto Sans KR';
   letter-spacing: -0.5px;
-  color: #444;
+  color: #555;
   line-height: 160%;
 }
 a:link {
@@ -21,7 +21,17 @@ a:active {
 hr {
   border: 0.5px solid #e6e6e6;
   margin: 30px 0;
-  
+}
+h1 {
+  line-height: 160%;
+  font-weight: 400;
+}
+h2 {
+  line-height: 160%;
+  font-weight: 400;
+}
+strong {
+  font-weight: 600;
 }
 .container {
   display: flex;
@@ -41,9 +51,9 @@ hr {
 
 
 .heading {
-  color: #333;
+  color: hsla(291, 0%, 18%,0.4);
   font-weight: 300;
-  font-size: 30px;
+  font-size: 18px;
   margin:30;
 }
 .nav-links {
@@ -109,7 +119,9 @@ hr {
 .content-container{
   width: 75%;
   height: 100%;
+  
 }
+
 @media (max-width: 750px) {
   .content-container {
     width: 100%;
@@ -131,10 +143,14 @@ hr {
 .home-info-container{
   display: flex;
   width: 100%;
-  gap: 20px;
+  gap: 15%;
   flex-wrap: wrap;
+  align-items: center;
 }
-
+.home-highlight {
+  font-weight: 700;
+  color: #ffcf03;
+}
 .home-image{
   width: 200px;
   height: 250px;
@@ -145,4 +161,13 @@ hr {
 .career-link{
   color:#333;
   font-size: 18px;
+}
+
+.markdown-container{
+  width: 100%;
+}
+
+.markdown-container strong{
+  font-weight: 700;
+  color: #ffcf03;
 }
