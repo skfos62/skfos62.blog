@@ -8,8 +8,8 @@ const EtcPage = ({data}) => {
   return (
     <Layout pageTitle="etc" >
     <div className={markdownContainer}>
-    {
-        data.allMdx.nodes.map(node => (
+     {
+          data.allMdx.nodes.map(node => (
           <MDXRenderer >
             {node.body}
             </MDXRenderer>

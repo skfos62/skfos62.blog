@@ -33,6 +33,12 @@ h2 {
 strong {
   font-weight: 600;
 }
+
+li {
+  list-style: none;
+}
+
+
 .container {
   display: flex;
   margin: auto;
@@ -138,8 +144,6 @@ strong {
   }
 }
 
-
-
 .home-info-container{
   display: flex;
   width: 100%;
@@ -170,4 +174,28 @@ strong {
 .markdown-container strong{
   font-weight: 700;
   color: #ffcf03;
+}
+
+.markdown-container li:before {
+  content: "-";
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0px 5px 6px 0px;
+}
+
+.scroll-animaion {
+  opacity: 1;
+  transition: all 1s ease;
+}
+.scroll-animaion-up {
+  transform: translate(0);
+}
+
+.scroll-animaion.show {
+  opacity: 0;
+  transform: none;
+}
+.scroll-animaion.mountShow {
+  opacity: 1;
+  transform: none;
 }

@@ -14,5 +14,24 @@ module.exports = {
         }
       },
       "gatsby-plugin-mdx",
+      {
+        resolve: `gatsby-transformer-remark`,
+        options: {
+          // Footnotes mode (default: true)
+          footnotes: true,
+          // GitHub Flavored Markdown mode (default: true)
+          gfm: true,
+          // Plugins configs
+          plugins: [
+            {
+              resolve: "gatsby-remark-external-links",
+              options: {
+                target: "_blank",
+                rel: "nofollow"
+              }
+            }
+          ],
+        },
+      },
     ]
 }
