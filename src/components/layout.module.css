@@ -7,7 +7,7 @@ p{
   line-height: 160%;
 }
 a:link {
-  color : black;
+  color : #555;
 }
 a:visited {
   color : black;
@@ -163,7 +163,7 @@ li {
   font-weight: 300;
 }
 .career-link{
-  color:#333;
+  color:#555;
   font-size: 18px;
 }
 

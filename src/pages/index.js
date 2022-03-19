@@ -73,7 +73,6 @@ function IndexPage() {
         >
           <hr />
           <h2>
-            {' '}
             <span className={homeHighlight}>#</span> Career
           </h2>
           <div>
@@ -145,7 +144,6 @@ function IndexPage() {
         <div>
           <hr />
           <h2>
-            {' '}
             <span className={homeHighlight}>#</span> Project & Used Skils
           </h2>
 
@@ -158,18 +156,36 @@ function IndexPage() {
                 flexWrap: 'wrap',
               }}
             >
-              <Link
-                to="https://stage.portal.isyncbrain.com/auth/login"
-                className={careerLink}
-                target="_blank"
+              <div
+                style={{
+                  display: 'flex',
+                  marginBottom: 10,
+                  flexWrap: 'wrap',
+                  gap: 20,
+                }}
               >
-                IsyncBrain 3.0
-              </Link>
+                <Link
+                  to="https://stage.portal.isyncbrain.com/auth/login"
+                  className={careerLink}
+                  target="_blank"
+                >
+                  IsyncBrain 3.0
+                </Link>
+                <span>
+                  <strong>2021. 05. 11 ~ 현재</strong>
+                </span>
+              </div>
+
               <p>
-                뇌파 기반의 경도인지장애 조기 판별 프로그램의 웹사이트 입니다.{' '}
-                <br /> iSyncWeve라는 자사의 뇌파 검사 기계를 활용하여 뇌파 검사
-                후 얻어지는
-                <br /> 다양한 데이터 및 결과지 들을 볼수 있는 사이트
+                뇌파 기반의 경도인지장애 조기 판별 프로그램의 웹사이트 입니다.
+                iSyncWeve라는 자사의 뇌파 검사 기계를 <br />
+                활용하여 뇌파 검사 후 얻어지는 다양한 데이터 및 결과지를 볼수
+                있는 사이트입니다.
+              </p>
+              <p>
+                병원 및 연구실을 위한 뇌파데이터를 관리하는 곳이므로, 데이터와
+                결과지를 보는 기능 외에도 <br /> 고객을 관리하는 기능 및 내부
+                사람들을 위한 admin사이트를 구축하였습니다.
               </p>
             </div>
             <div>
@@ -182,14 +198,34 @@ function IndexPage() {
                   marginLeft: 20,
                 }}
               >
-                <p>
-                  <strong>Language</strong>
-                </p>
-                <div> - Typescript </div>
-                <div> - React </div>
-                <div> - Redux-saga </div>
-                <div> - Redux-thunk </div>
-                <div> - React-query </div>
+                <div>
+                  <strong>언어</strong>
+                  <p> - Typescript </p>
+                </div>
+                <div>
+                  <strong>Ui 관련</strong>
+                  <p> - React </p>
+                  <p> - Meterial Ui </p>
+                  <p> - Css-in-js </p>
+                  <p> - Styled components </p>
+                </div>
+                <div>
+                  <strong>상태관리</strong>
+                  <p> - Redux-saga (thunk로 마이그레이션) </p>
+                  <p> - Redux-thunk </p>
+                  <p> - React-query </p>
+                </div>
+                <div>
+                  <strong>기타 사용 라이브러리</strong>
+                  <p> - Aixos </p>
+                  <p> - Date-fns</p>
+                  <p> - i18n (다국어화 지원) </p>
+                  <p> - eslint / prettier 적용 </p>
+                </div>
+                <div>
+                  <strong>배포 환경</strong>
+                  <p> - Aws s3 + Cloud Front </p>
+                </div>
               </div>
             </div>
           </div>
@@ -198,16 +234,33 @@ function IndexPage() {
             <div
               style={{
                 display: 'flex',
-                gap: 20,
                 marginBottom: 10,
                 flexWrap: 'wrap',
+                flexDirection: 'column',
               }}
             >
-              <div style={{ fontSize: 18 }}>IsyncBeat</div>
-              <div>
-                입사직후 ios 어플리케이션 구축 업무를 담당하였으나,
-                IsyncBrain업무 투입 후 중단{' '}
+              <div
+                style={{
+                  display: 'flex',
+                  marginBottom: 10,
+                  flexWrap: 'wrap',
+                  gap: 20,
+                }}
+              >
+                <div style={{ fontSize: 18 }}>IsyncBeat</div>
+                <span>
+                  <strong>2021. 03. 22 ~ 2021. 05. 10</strong>
+                </span>
               </div>
+              <p>
+                심박수 측정을 바탕으로 우울 및 스트레스 지수를 측정할수 있고,
+                바이오 피드백을 진행할수있는 앱입니다. <br />
+                해당 프로젝트는 약 2개월간 투입되어 업무를 진행하였습니다.
+              </p>
+              <p>
+                이 프로젝트에서는 firebase를 이용한 회원가입 및 로그인, apple
+                login구현, 설정페이지를 진행하였습니다.
+              </p>
             </div>
             <div>
               <div
@@ -219,9 +272,12 @@ function IndexPage() {
                   marginLeft: 20,
                 }}
               >
-                <div> - Swift </div>
-                <div> - Swift Ui </div>
-                <div> - Firebase </div>
+                <div>
+                  <strong>사용 스킬</strong>
+                  <p> - Swift </p>
+                  <p> - Swift Ui </p>
+                  <p> - Firebase </p>
+                </div>
               </div>
             </div>
           </div>
