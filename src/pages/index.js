@@ -42,10 +42,10 @@ function IndexPage() {
             <h1>
               <strong>디자이너 경력이 있는</strong> <br />
               <span className={homeHighlight}>클라이언트 개발자 정나래 </span>
-              <strong>입니다.</strong>{' '}
+              <strong>입니다.</strong>
             </h1>
             <p>
-              약 4년간의 웹디자이너로써의 경험을 살려서 사용자들의 입장에서 쓰기{' '}
+              약 4년간의 웹디자이너로써의 경험을 살려서 사용자들의 입장에서 쓰기
               <br />
               편한 웹환경을 구성하고 싶습니다. 어떻게 하면 가장 직관적으로
               편리함을 <br />
@@ -95,6 +95,9 @@ function IndexPage() {
             </div>
             <div style={{ marginLeft: 20 }}> - Frontend </div>
             <div style={{ marginLeft: 20 }}> - ios developer </div>
+            <div style={{ marginLeft: 20 }}>
+              - 2021년 하반기 <strong>우수사원</strong> 수상
+            </div>
           </div>
           <div style={{ marginTop: 10 }}>
             <div
@@ -112,7 +115,7 @@ function IndexPage() {
               >
                 npine
               </Link>
-              <p>2015 .04 .01 ~ 2020. 06. 14</p>
+              <p>2015 .04 .01 ~ 2019. 06. 14</p>
             </div>
             <div style={{ marginLeft: 20 }}> - Web Designer </div>
           </div>
@@ -121,8 +124,8 @@ function IndexPage() {
         <br />
         <div
           className={`${scrollAnimaion} ${scrollAnimaionUp} ${
-            isScrolled ? '' : show
-          }`}
+            isOpend ? '' : show
+          } `}
         >
           <hr />
           <h2>
@@ -141,7 +144,11 @@ function IndexPage() {
         </div>
 
         <br />
-        <div>
+        <div
+          className={`${scrollAnimaion} ${scrollAnimaionUp} ${
+            isOpend ? '' : show
+          } `}
+        >
           <hr />
           <h2>
             <span className={homeHighlight}>#</span> Project & Used Skils
@@ -178,7 +185,7 @@ function IndexPage() {
 
               <p>
                 뇌파 기반의 경도인지장애 조기 판별 프로그램의 웹사이트 입니다.
-                iSyncWeve라는 자사의 뇌파 검사 기계를 <br />
+                iSyncWave라는 자사의 뇌파 검사 기계를 <br />
                 활용하여 뇌파 검사 후 얻어지는 다양한 데이터 및 결과지를 볼수
                 있는 사이트입니다.
               </p>
@@ -247,7 +254,7 @@ function IndexPage() {
                   gap: 20,
                 }}
               >
-                <div style={{ fontSize: 18 }}>IsyncBeat</div>
+                <div style={{ fontSize: 18, fontWeight: 700 }}>IsyncBeat</div>
                 <span>
                   <strong>2021. 03. 22 ~ 2021. 05. 10</strong>
                 </span>

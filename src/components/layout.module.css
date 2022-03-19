@@ -156,8 +156,8 @@ li {
   color: #ffcf03;
 }
 .home-image{
-  width: 200px;
-  height: 250px;
+  width: 220px;
+  height: 270px;
 }
 .title{
   font-weight: 300;
@@ -185,7 +185,7 @@ li {
 
 .scroll-animaion {
   opacity: 1;
-  transition: all 1s ease;
+  transition: all 1.5s ease;
 }
 .scroll-animaion-up {
   transform: translate(0);
