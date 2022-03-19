@@ -1,3 +1,4 @@
+/* eslint-disable */
 module.exports = {
     siteMetadata: {
       title: `skfos62.dev blog`,

@@ -1,26 +1,20 @@
-import * as React from 'react'
-import { Link, graphql } from 'gatsby'
-import Layout from '../components/layout'
-import { MDXRenderer } from 'gatsby-plugin-mdx'
-import { markdownContainer } from '../components/layout.module.css'
+import * as React from 'react';
+import { Link, graphql } from 'gatsby';
+import { MDXRenderer } from 'gatsby-plugin-mdx';
+import Layout from '../components/layout';
+import { markdownContainer } from '../components/layout.module.css';
 
-const EtcPage = ({data}) => {
+function EtcPage({ data }) {
   return (
-    <Layout pageTitle="etc" >
-    <div className={markdownContainer}>
-     {
-          data.allMdx.nodes.map(node => (
-          <MDXRenderer >
-            {node.body}
-            </MDXRenderer>
-        ))
-      }
-    </div>
-  
-  </Layout>
-  )
+    <Layout pageTitle="etc">
+      <div className={markdownContainer}>
+        {data.allMdx.nodes.map((node) => (
+          <MDXRenderer>{node.body}</MDXRenderer>
+        ))}
+      </div>
+    </Layout>
+  );
 }
-
 
 export const query = graphql`
   query {
@@ -31,6 +25,6 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 
-export default EtcPage
+export default EtcPage;
