@@ -212,7 +212,7 @@ function IndexPage() {
                 <div>
                   <strong>Ui 관련</strong>
                   <p> - React </p>
-                  <p> - Meterial Ui </p>
+                  <p> - Material-UI </p>
                   <p> - Css-in-js </p>
                   <p> - Styled components </p>
                 </div>
@@ -224,7 +224,7 @@ function IndexPage() {
                 </div>
                 <div>
                   <strong>기타 사용 라이브러리</strong>
-                  <p> - Aixos </p>
+                  <p> - Axios </p>
                   <p> - Date-fns</p>
                   <p> - i18n (다국어화 지원) </p>
                   <p> - eslint / prettier 적용 </p>
