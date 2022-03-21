@@ -53,10 +53,9 @@ function IndexPage() {
             </p>
             <p>
               서비스를 만드는것은 한사람의 노력으로 되지 않는것을 잘
-              알고있습니다. <br /> 서비스를 만드는 모두가 함께 피드백을 하며
-              발전시켜,
+              알고있습니다. <br />서비스를 만드는 모두가 함께 건설적인 피드백을 하며 발전시켜,
               <br />
-              <br /> 좋은 서비스를 개발하고 싶습니다.
+              좋은 서비스를 개발하고 싶습니다.              
             </p>
           </div>
           <StaticImage
@@ -210,29 +209,13 @@ function IndexPage() {
                   <p> - Typescript </p>
                 </div>
                 <div>
-                  <strong>Ui 관련</strong>
+                  <strong>사용 기술 내용</strong>
                   <p> - React </p>
-                  <p> - Material-UI </p>
-                  <p> - Css-in-js </p>
-                  <p> - Styled components </p>
-                </div>
-                <div>
-                  <strong>상태관리</strong>
-                  <p> - Redux-saga (thunk로 마이그레이션) </p>
-                  <p> - Redux-thunk </p>
+                  <p> - Material-UI, Css-in-js, Styled components</p>
+                  <p> - Redux,Redux-saga (thunk로 마이그레이션), Redux-thunk </p>
                   <p> - React-query </p>
-                </div>
-                <div>
-                  <strong>기타 사용 라이브러리</strong>
-                  <p> - Axios </p>
-                  <p> - Date-fns</p>
                   <p> - i18n (다국어화 지원) </p>
-                  <p> - eslint / prettier 적용 </p>
-                </div>
-                <div>
-                  <strong>배포 환경</strong>
-                  <p> - Aws s3 + Cloud Front </p>
-                </div>
+                </div>              
               </div>
             </div>
           </div>
