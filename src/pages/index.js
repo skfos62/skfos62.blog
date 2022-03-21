@@ -45,11 +45,10 @@ function IndexPage() {
               <strong>입니다.</strong>
             </h1>
             <p>
-              약 4년간의 웹디자이너로써의 경험을 살려서 사용자들의 입장에서 쓰기
+              약 4년간의 웹디자이너로써의 경험을 살려서 사용자들의 입장에서 
               <br />
-              편한 웹환경을 구성하고 싶습니다. 어떻게 하면 가장 직관적으로
-              편리함을 <br />
-              줄수있을지 함께 고민하면 좋겠습니다.
+              어떻게 하면 가장 직관적으로 편리하게 사용할 수 있을지 고민합니다.
+              <br />
             </p>
             <p>
               서비스를 만드는것은 한사람의 노력으로 되지 않는것을 잘
@@ -150,7 +149,7 @@ function IndexPage() {
         >
           <hr />
           <h2>
-            <span className={homeHighlight}>#</span> Project & Used Skils
+            <span className={homeHighlight}>#</span> Project & Used Skills
           </h2>
 
           <div>
